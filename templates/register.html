@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+</head>
+
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form>
+            <div class="name">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Ex- Joseph Soren" required>
+            </div>
+            <div class="username">
+                <label for="username">Username</label>
+                <input id="username" type="username" placeholder="Ex- username" required>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ex- username@email.com" required>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Abcd@123">
+            </div>
+            <button type="submit">Submit</button>
+            <p class="signup-text">Already have an account? <a href="http://127.0.0.1:8000/">Log In</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
